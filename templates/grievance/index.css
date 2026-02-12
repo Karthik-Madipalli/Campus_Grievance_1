@@ -1,0 +1,149 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* MAIN CARD */
+
+.container{
+    width:90%;
+    max-width:800px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(15px);
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+    color:white;
+    animation:fadeIn .6s ease;
+}
+
+@keyframes fadeIn{
+    from{opacity:0;transform:translateY(20px);}
+    to{opacity:1;transform:translateY(0);}
+}
+
+h2,h3{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* INPUTS */
+
+input,textarea,select{
+    width:100%;
+    padding:12px 14px;
+    border-radius:10px;
+    border:none;
+    margin:10px 0;
+    outline:none;
+    background:rgba(255,255,255,.9);
+    font-size:15px;
+}
+
+textarea{
+    resize:none;
+    min-height:120px;
+}
+
+/* BUTTONS */
+
+button{
+    padding:12px 22px;
+    border:none;
+    border-radius:25px;
+    background:linear-gradient(135deg,#00dbde,#fc00ff);
+    color:white;
+    cursor:pointer;
+    margin:10px 5px;
+    transition:.3s;
+    font-weight:500;
+}
+
+button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+}
+
+/* DASHBOARD STATS */
+
+.stats{
+    display:flex;
+    gap:15px;
+    margin:20px 0;
+}
+
+.stats p{
+    flex:1;
+    background:rgba(255,255,255,.2);
+    padding:15px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.stats span{
+    display:block;
+    font-size:22px;
+    font-weight:600;
+}
+
+/* COMPLAINT BLOCK */
+
+.block{
+    background:rgba(255,255,255,.2);
+    padding:15px;
+    margin:15px 0;
+    border-radius:12px;
+}
+
+/* HEADER ROW */
+
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* LINKS */
+
+a{
+    color:#ffeb3b;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+/* FILE INPUT */
+
+input[type=file]{
+    background:white;
+}
+
+/* STAFF BOX */
+
+#staffBox{
+    margin-top:20px;
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+    .stats{
+        flex-direction:column;
+    }
+}
+
